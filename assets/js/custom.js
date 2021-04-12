@@ -12,13 +12,6 @@ $(function() {
     });
 });
 
-$('.btn').click(function() {
-    $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top-70
-    }, 1000);
-    return false;
-});
-
 $("#open-btn").click(function(){
     $("#body").toggleClass("overflow-none");
 });
