@@ -19,6 +19,7 @@ nav {
 	position: fixed;
 	width: 100%;
 	height: 70px;
+	z-index: 999;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -289,10 +290,29 @@ label {
 .content {
 	background-color: #333 !important;
 	height: auto;
+	color: #fff;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 .content section {
+	width: 70%;
 	padding: 50px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+hr {
+	width: 200px;
+	height: 2px;
+	background-color: #720093;
+	border: none;
+}
+
+@media (max-width: 768px) {
+	.content section {
+		width: 100%;
+	}
 }
 
 /* Contact form styling and page fade in */
@@ -307,14 +327,14 @@ label {
 	right: -100%;
 	width: 100%;
 	height: 100vh;
-	z-index: -1;
+	z-index: 1000;
 	opacity: 1;
 	background: #333;
 	padding: 50px;
 	display: flex;
 	overflow: hidden;
 	box-sizing: border-box;
-	transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in-out;
 }
 
 #toggle:checked ~ .contact-form {
@@ -331,7 +351,7 @@ label {
 	opacity: 0.3;
 	right: -100%;
 	z-index: 1001;
-	transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in-out;
 }
 
 .close-btn:hover {
@@ -400,6 +420,8 @@ form .input-block label {
 	transition: all 0.3s ease-in;
 	transform: translateY(25px);
 	pointer-events: none;
+	box-shadow: none;
+	border: none;
 }
 
 form .input-block input, textarea {
@@ -411,19 +433,20 @@ form .input-block input, textarea {
 	border-right: none;
 	margin-bottom: 10px;
 	transition: all 0.3s ease-in-out;
-	resize:vertical;
+	resize: vertical;
+	color: #fff;
 }
 
 form .input-block input:focus, textarea:focus {
 	border-bottom: 1px solid rgba(0,191,153,1) !important;
 	outline: none;
+	color: #fff;
 }
 
-form .input-block input:focus + label {
-	transform: translateY(-2px);
-}
-
-form .input-block textarea:focus + label {
+form .input-block input:focus ~ label,
+form .input-block textarea:focus ~ label,
+form .input-block input:valid ~ label,
+form .input-block textarea:valid ~ label {
 	transform: translateY(-2px);
 }
 
@@ -442,6 +465,43 @@ form button {
 		padding: 20px;
 		box-sizing: border-box;
 		margin: auto;
+	}
+}
+
+/* Row class and colum style */
+.row {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+
+.col-md-4-10 {
+	width: 40%;
+}
+
+.col-md-6-10 {
+	width: 50%;
+}
+
+.col-md-8-10 {
+	width: 80%;
+}
+
+@media (max-width: 768px) {
+	.row {
+		flex-direction: column;
+	}
+
+	.col-md-4-10 {
+		width: 100%;
+	}
+	
+	.col-md-6-10 {
+		width: 100%;
+	}
+	
+	.col-md-8-10 {
+		width: 100%;
 	}
 }
 
@@ -486,12 +546,44 @@ form button {
 }
 
 /* Margins */
+.mt-auto {
+	margin-top: auto;
+}
+
+.mt-0 {
+	margin-top: 0;
+}
+
 .mt-1 {
 	margin-top: 20px;
 }
 
+.mb-auto {
+	margin-bottom: auto;
+}
+
+.mb-0 {
+	margin-bottom: 0;
+}
+
 .mb-1 {
 	margin-bottom: 20px;
+}
+
+.ml-auto {
+	margin-left: auto !important;
+}
+
+.ml-0 {
+	margin-left: 0;
+}
+
+.mr-auto {
+	margin-right: auto !important;
+}
+
+.mr-0 {
+	margin-right: 0;
 }
 
 /* Buttons */
@@ -518,12 +610,61 @@ form button {
 	text-align: center;
 }
 
+.text-justify {
+	text-align: justify;
+}
+
 .text-left {
 	text-align: left;
 }
 
 .text-right {
 	text-align: right;
+}
+
+.float-right {
+	float: right;
+}
+
+/* Image styles */
+.img-rounded {
+	border-radius: 50%;
+}
+
+.img-responsive {
+	width: 100%;
+	z-index: 0;
+}
+
+.img-80 {
+	width: 80%;
+}
+
+/* Element fade in once in viewport */
+.to-fade-in {
+	opacity: 0;
+}
+.to-fade-in.fade-in {
+	-webkit-animation: fade-in 3s forwards;
+	animation: fade-in 3s forwards;
+}
+
+@-webkit-keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 /* Animations */

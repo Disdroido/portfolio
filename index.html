@@ -27,7 +27,6 @@
                     <ul>
                         <li><a href="" class="lg-hidden brand"><img src="assets/img/logo-dark-small.png" alt="Ethan Worth"></a></li>
                         <li><a class="link" href="index.html">home</a></li>
-                        <li><a class="link" href="projects.html">Projects</a></li>
                         <li><a class="link" href="blog.html">blog</a></li>
                         <li><label for="toggle" class="link" aria-hidden="true" id="open-btn">contact</label></li>
                         <li><a class="link link4 btn btn-primary" href="#resume">resume</a></li>
@@ -48,7 +47,23 @@
 
         <section>
             <div id="about" class="mt-1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, ab? Assumenda iure natus minus, amet corrupti explicabo qui maxime praesentium ut totam voluptas quia sapiente, accusamus sit quam possimus vero?</p>
+                <p class="fs-1 text-center mb-0 fade-elem to-fade-in">ABOUT ME</p>
+                <hr>
+                <div class="row fade-elem to-fade-in">
+                    <div class="col-8-10 mt-auto mb-auto">
+                        <p class="fs-2 mb-0 ts-underline text-center">Hey, I'm Ethan!</p>
+                        <p class="mt-0">
+                            I passionately love to code and adequately develop many things utilizing code. I am currently 
+                            studying at Coder Academy in Ultimo Sydney. I begancoding when I was 15 years old building small 
+                            static website; since then I have set aboutbuilding full stack websites with broad backends together 
+                            with comprehensive databases.
+                        </p>
+                    </div>
+
+                    <div class="col-4-10 text-center">
+                        <img class="img-rounded img-responsive img-80" src="assets/img/ethan.jpg" alt="">
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -74,21 +89,21 @@
                 <h1 class="text-center text-primary">CONTACT</h1>
 
                 <div class="input-block">
-                    <input type="text">
-                    <label for="">First Name</label>
+                    <input type="text" id="name" name="name" required="required">
+                    <label for="name">Name</label>
                 </div>
 
                 <div class="input-block">
-                    <input type="text">
-                    <label for="">Email</label>                    
+                    <input type="text" id="email" name="email" required="required">
+                    <label for="">Email</label>
                 </div>
 
                 <div class="input-block">
-                    <textarea rows="3" type="text"></textarea>
-                    <label for="">Drop your message here</label>                   
+                    <textarea rows="3" type="text" id="message" name="message" required="required"></textarea>
+                    <label for="message">Drop your message here</label>
                 </div>
 
-                <button class="btn btn-primary btn-hover mt-1">SEND</button>
+                <button class="btn btn-primary btn-hover mt-1" type="submit">SEND</button>
 
                 <div class="contact-links">
                     <a href=""><img src="assets/img/instagram.webp" alt="Instagram logo" width="50px"></a>
