@@ -346,9 +346,12 @@ label {
 
 .skills-content .skills-card {
 	background-color: #444;
-	height: 600px;
 	padding: 40px;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .skills-content .border-right {
@@ -366,6 +369,8 @@ label {
 }
 
 .skills-content .skills-card ul {
+	display: flex;
+	flex-direction: column;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -378,7 +383,6 @@ label {
 @media (max-width: 768px) {
 	.skills-content .skills-card {
 		padding: 20px;
-		height: 570px;
 	}
 
 	.skills-content .border-right {
@@ -857,19 +861,19 @@ footer {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	height: 200px;
+	justify-content: center;
+	height: auto;
+	padding: 50px;
 	width: 100%;
 	bottom: 0;
+	box-sizing: border-box;
 	background-color: #444;
 	transition: all 0.5s ease-in-out;
 }
 
 footer .footer-links {
 	display: flex;
-	flex-direction: row;
-	align-items: center;
 	justify-content: center;
-	margin: auto 0;
 	transition: all 0.5s ease-in-out;
 }
 
@@ -887,8 +891,6 @@ footer .footer-link:hover {
 footer .footer-contact-links {
 	display: flex;
 	justify-content: center;
-	flex-direction: row;
-	align-items: center;
 	transition: all 0.5s ease-in-out;
 }
 
