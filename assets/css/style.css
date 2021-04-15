@@ -9,6 +9,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	background-color: #333;
 }
 
 /* Start of tha navbar */
@@ -260,6 +261,7 @@ label {
 	}
 }
 
+/* Hero styles and sizes */
 .hero {
 	height: 100vh;
 	width: 100%;
@@ -273,7 +275,7 @@ label {
 	display: flex;
 	justify-content: center;
 	height: 100vh;
-	max-width: 40%;
+	width: 40%;
 	margin: auto;
 	display: flex;
 	align-items: center;
@@ -287,6 +289,13 @@ label {
 	margin: 5px;
 }
 
+@media (max-width: 768px) {
+	.hero-content {
+		width: 90%;
+	}
+}
+
+/* Main content styles for pages */
 .content {
 	background-color: #333 !important;
 	height: auto;
@@ -302,26 +311,21 @@ label {
 	box-sizing: border-box;
 }
 
-hr {
-	width: 200px;
-	height: 2px;
-	background-color: #720093;
-	border: none;
-}
-
 @media (max-width: 768px) {
 	.content .container {
 		width: 100%;
+		padding: 20px;
 	}
 }
 
 /* Skills svg background */
 #skills {
-	height: 150vh;
+	height: 1500px;
 	width: 100% !important;
 	background-image: url("../img/background2.svg");
 	background-color: #333;
     background-size: cover;
+	background-position: top center;
 }
 
 .skills-content {
@@ -342,7 +346,7 @@ hr {
 
 .skills-content .skills-card {
 	background-color: #444;
-	height: 500px;
+	height: 600px;
 	padding: 40px;
 	position: relative;
 }
@@ -361,7 +365,22 @@ hr {
 	width: 20%;
 }
 
+.skills-content .skills-card ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.skills-content .skills-card ul li {
+	margin: 7px 0;
+}
+
 @media (max-width: 768px) {
+	.skills-content .skills-card {
+		padding: 20px;
+		height: 560px;
+	}
+
 	.skills-content .border-right {
 		border-right: none;
 		border-radius: 10px;
@@ -658,9 +677,22 @@ form button {
 	}
 }
 
+/* Spacers */
+.spacer-mb {
+	margin: 150px 0;
+}
+
 /* Font Color */
 .text-primary {
 	color: #00bf99;
+}
+
+.heading-border:after {
+	content: '';
+    display: block;
+    border: 2px solid #720093;
+	width: 200px !important;
+	margin: 0 auto;
 }
 
 /* Font Sizing */
@@ -669,19 +701,23 @@ form button {
 }
 
 .fs-2 {
-	font-size: 30px;
+	font-size: 35px;
 }
 
 .fs-3 {
-	font-size: 25px;
+	font-size: 30px;
 }
 
 .fs-4 {
-	font-size: 20px;
+	font-size: 25px;
 }
 
 .fs-5 {
-	font-size: 15px;
+	font-size: 20px;
+}
+
+.fs-6 {
+	font-size: 18px;
 }
 
 /* Font Weight */
@@ -700,43 +736,43 @@ form button {
 
 /* Margins */
 .mt-auto {
-	margin-top: auto;
+	margin-top: auto !important;
 }
 
 .mt-0 {
-	margin-top: 0;
+	margin-top: 0 !important;
 }
 
 .mt-1 {
-	margin-top: 20px;
+	margin-top: 20px !important;
 }
 
 .mt-2 {
-	margin-top: 40px;
+	margin-top: 40px !important;
 }
 
 .mt-3 {
-	margin-top: 60px;
+	margin-top: 60px !important;
 }
 
 .mt-4 {
-	margin-top: 80px;
+	margin-top: 80px !important;
 }
 
 .mb-auto {
-	margin-bottom: auto;
+	margin-bottom: auto !important;
 }
 
 .mb-0 {
-	margin-bottom: 0;
+	margin-bottom: 0 !important;
 }
 
 .mb-1 {
-	margin-bottom: 20px;
+	margin-bottom: 20px !important;
 }
 
 .mb-2 {
-	margin-bottom: 40px;
+	margin-bottom: 40px !important;
 }
 
 .ml-auto {
@@ -744,11 +780,11 @@ form button {
 }
 
 .ml-0 {
-	margin-left: 0;
+	margin-left: 0 !important;
 }
 
 .ml-1 {
-	margin-left: 20px;
+	margin-left: 20px !important;
 }
 
 .mr-auto {
@@ -756,11 +792,11 @@ form button {
 }
 
 .mr-0 {
-	margin-right: 0;
+	margin-right: 0 !important;
 }
 
 .mr-1 {
-	margin-right: 20px;
+	margin-right: 20px !important;
 }
 
 /* Buttons */
@@ -823,6 +859,7 @@ footer {
 	align-items: center;
 	height: 200px;
 	width: 100%;
+	bottom: 0;
 	background-color: #444;
 	transition: all 0.5s ease-in-out;
 }
