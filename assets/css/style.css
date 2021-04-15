@@ -346,7 +346,7 @@ label {
 
 .skills-content .skills-card {
 	background-color: #444;
-	height: 610px;
+	height: 600px;
 	padding: 40px;
 	position: relative;
 }
@@ -378,7 +378,7 @@ label {
 @media (max-width: 768px) {
 	.skills-content .skills-card {
 		padding: 20px;
-		height: 560px;
+		height: 570px;
 	}
 
 	.skills-content .border-right {
