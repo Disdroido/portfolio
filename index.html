@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/jquery.js"></script>
 </head>
-<body id="body">
+<body>
 
     <div class="wrapper">
         <header>
@@ -183,7 +183,7 @@
         var content1 = 'Full Stack Website Developer';
         var content2 = "I Design & Code Beautiful Things";
 
-        var ele = '<span>' + content1.split('').join('</span><span>') + '</span><br><span class="ts-underline fs-4">' + content2.split('').join('</span><span class="ts-underline fs-4">') + '</span>';
+        var ele = '<span>' + content1.split('').join('</span><span>') + '</span><br><span class="fs-4">' + content2.split('').join('</span><span class="fs-4">') + '</span>';
 
 
         $(ele).hide().appendTo('.text1').each(function (i) {
