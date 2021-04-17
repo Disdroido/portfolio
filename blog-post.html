@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan Worth | Blog Post</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="wrapper">
+        <header>
+            <nav id="navbar">
+                <input type="checkbox" id="nav" class="hidden">
+                <label for="nav" class="nav-btn">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </label>
+                <div class="logo">
+                    <a href="/"><img src="assets/img/logo-dark.png" alt="Ethan Worth"></a>
+                </div>
+            
+                <div class="nav-wrapper">
+                    <ul>
+                        <li><a href="" class="lg-hidden brand"><img src="assets/img/logo-dark-small.png" alt="Ethan Worth"></a></li>
+                        <li><a class="link" href="../">home</a></li>
+                        <li><a class="link" href="blog.html">blog</a></li>
+                        <li><a class="link" href="projects.html">projects</a></li>
+                        <li><label for="toggle" class="link" aria-hidden="true" id="open-btn">contact</label></li>
+                        <li><a class="link link4 btn btn-primary" href="#resume">resume</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="hero">
+        <div class="hero-content">
+            <p class="fs-1 ">Blog Posts</p>
+            <p class="text1 fs-3 fw-light"></p>
+            <p></p>
+        </div>
+    </div>
+
+    <div class="form">
+        <input type="checkbox" id="toggle" class="hidden">
+        <label for="toggle" class="close-btn nav-btn" id="close-btn"></label>
+        <div class="contact-form">
+            <form action="">
+                <h1 class="text-center text-primary">CONTACT</h1>
+
+                <div class="input-block">
+                    <input type="text" id="name" name="name" required="required">
+                    <label for="name">Name</label>
+                </div>
+
+                <div class="input-block">
+                    <input type="text" id="email" name="email" required="required">
+                    <label for="">Email</label>
+                </div>
+
+                <div class="input-block">
+                    <textarea rows="3" type="text" id="message" name="message" required="required"></textarea>
+                    <label for="message">Drop your message here</label>
+                </div>
+
+                <button class="btn btn-primary btn-hover mt-1" type="submit">SEND</button>
+
+                <div class="contact-links">
+                    <a href="https://www.instagram.com/ethan.worth1/" target="_blank"><img src="assets/img/instagram.webp" alt="Instagram logo"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100013562087751" target="_blank"><img src="assets/img/facebook.webp" alt="Facebook logo"></a>
+                    <a href="https://dribbble.com/EthanWorth" target="_blank"><img src="assets/img/dribbble.png" alt="Dribbble logo"></a>
+                    <a href="https://github.com/Disdroido" target="_blank"><img src="assets/img/github.png" alt="Github logo"></a>
+                    <a href="https://twitter.com/Ethan63111987" target="_blank"><img src="assets/img/twitter.png" alt="Twitter logo"></a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+        var content1 = 'More Coming Soon!';
+
+        var ele = '<span>' + content1.split('').join('</span><span>') + '</span>';
+
+
+        $(ele).hide().appendTo('.text1').each(function (i) {
+            $(this).delay(100 * i).css({
+                display: 'inline',
+                opacity: 0
+            }).animate({
+                opacity: 1
+            }, 100);
+        });
+    </script>
+    
+</body>
+</html>
