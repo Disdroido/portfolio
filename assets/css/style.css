@@ -1085,6 +1085,7 @@ footer {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	position: relative;
 	height: auto;
 	padding: 50px;
 	width: 100%;
