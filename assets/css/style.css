@@ -1085,14 +1085,11 @@ footer {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	position: relative;
 	height: auto;
 	padding: 50px;
 	width: 100%;
-	top: auto;
+	height: 200px;
 	bottom: 0;
-	margin-top: auto;
-	margin-bottom: 0;
 	box-sizing: border-box;
 	background-color: #444;
 	transition: all 0.5s ease-in-out;
