@@ -1066,6 +1066,12 @@ form button {
 	float: right;
 }
 
+@media (max-width: 768px) {
+	.text-center-md {
+		text-align: center;
+	}
+}
+
 /* Image styles */
 .img-rounded {
 	border-radius: 50%;
