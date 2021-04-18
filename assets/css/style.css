@@ -296,6 +296,14 @@ label {
 	}
 }
 
+.h-50 {
+	height: 50vh;
+}
+
+.h-50 .hero-content {
+	height: 50vh;
+}
+
 /* Main content styles for pages */
 .content {
 	background-color: #333 !important;
