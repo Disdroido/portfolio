@@ -8,6 +8,11 @@ https://github.com/Disdroido/portfolio
 This website was created to allow for future employers to easily get in contact with me and to view my past work. All of the components on this website were designed for eye drawing outcomes and easibility in reading and viewing. Easy to use and view navbar and footer with all linking pages and a downloadable resume.
 ### Target Audience
 My target audience are future employers and anyone interested in working on colaborative projects with me.
+### Tech Stack
+* HTML
+* CSS
+* Javascript
+* Jquery
 ### Sitemap
 ![Sitemap](https://github.com/Disdroido/portfolio/blob/master/docs/sitemap.png)
 ### Wireframes
@@ -19,8 +24,3 @@ My target audience are future employers and anyone interested in working on cola
 ![Blog Post Page Wirefram](https://github.com/Disdroido/portfolio/blob/master/docs/blog-post-wireframe.PNG)
 #### Projects Page
 ![Projects Page Wirefram](https://github.com/Disdroido/portfolio/blob/master/docs/projects-wireframe.PNG)
-### Tech Stack
-* HTML
-* CSS
-* Javascript
-* Jquery
