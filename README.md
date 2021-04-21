@@ -11,9 +11,13 @@ My target audience are future employers and anyone interested in working on cola
 ### Sitemap
 ![Sitemap](https://github.com/Disdroido/portfolio/blob/master/docs/sitemap.png)
 ### Wireframes
+#### Home Page
 ![Home Page Wirefram](https://github.com/Disdroido/portfolio/blob/master/docs/home-wireframe.PNG)
+#### Blog Page
 ![Blog Page Wirefram](https://github.com/Disdroido/portfolio/blob/master/docs/blog-wireframe.PNG)
+#### Blog Post Page
 ![Blog Post Page Wirefram](https://github.com/Disdroido/portfolio/blob/master/docs/blog-post-wireframe.PNG)
+#### Projects Page
 ![Projects Page Wirefram](https://github.com/Disdroido/portfolio/blob/master/docs/projects-wireframe.PNG)
 ### Tech Stack
 * HTML
