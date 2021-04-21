@@ -9,12 +9,12 @@ This website was created to allow for future employers to easily get in contact 
 ### Target Audience
 My target audience are future employers and anyone interested in working on colaborative projects with me.
 ### Sitemap
-! [Sitemap](/docs/sitemap.png)
+! [Sitemap](https://github.com/Disdroido/portfolio/docs/sitemap.png)
 ### Wireframes
-! [Home Page Wirefram](/docs/home-wirefram.PNG)
-! [Blog Page Wirefram](/docs/blog-wirefram.PNG)
-! [Blog Post Page Wirefram](/docs/blog-post-wirefram.PNG)
-! [Projects Page Wirefram](/docs/projects-wirefram.PNG)
+! [Home Page Wirefram](https://github.com/Disdroido/portfolio/docs/home-wirefram.PNG)
+! [Blog Page Wirefram](https://github.com/Disdroido/portfolio/docs/blog-wirefram.PNG)
+! [Blog Post Page Wirefram](https://github.com/Disdroido/portfolio/docs/blog-post-wirefram.PNG)
+! [Projects Page Wirefram](https://github.com/Disdroido/portfolio/docs/projects-wirefram.PNG)
 ### Tech Stack
 * HTML
 * CSS
