@@ -12,7 +12,6 @@ My target audience are future employers and anyone interested in working on cola
 * HTML
 * CSS
 * Javascript
-* Jquery
 ### Sitemap
 ![Sitemap](https://github.com/Disdroido/portfolio/blob/master/docs/sitemap.png)
 ### Wireframes
